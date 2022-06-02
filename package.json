@@ -21,7 +21,7 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "build": "vite build --outDir docs --base './'",
+    "build": "vite build --outDir docs --base '/rpg-map/'",
     "test": "tsc --no-emit",
     "preview": "vite preview"
   },
