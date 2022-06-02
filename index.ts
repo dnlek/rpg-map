@@ -20,7 +20,7 @@ function addMarker(map, position, label, text): void {
     },
     icon: {
       labelOrigin: new google.maps.Point(11, 50),
-      url: '/rpg-map/pointer_small.png',
+      url: './pointer_small.png',
       // size: new google.maps.Size(95, 393),
       origin: new google.maps.Point(0, 0),
       anchor: new google.maps.Point(11, 40),
@@ -65,7 +65,7 @@ function initMap(): void {
       const bound = Math.pow(2, zoom);
       console.log({ coord, normalizedCoord, zoom, bound })
       // return "/MapA.jpg"
-      return `/rpg-map/tiles/${zoom}/tile_${normalizedCoord.x}_${(normalizedCoord.y)}.png`
+      return `./tiles/${zoom}/tile_${normalizedCoord.x}_${(normalizedCoord.y)}.png`
       // console.log(zoom, normalizedCoord.x, (bound - normalizedCoord.y - 1), "https://mw1.google.com/mw-planetary/lunar/lunarmaps_v1/clem_bw" +
       // "/" +
       // zoom +
